@@ -1,0 +1,1 @@
+include ':app', ':android-integration-2.2-supportv4'

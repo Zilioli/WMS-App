@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50px">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:text="      WMS - Cadastro de Produtos"
+        android:textSize="@dimen/abc_dialog_padding_top_material" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50px">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Nome do Produto" />
+
+        <EditText
+            android:id="@+id/txtProduto"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     Codigo de Barra"
+            android:id="@+id/lblCdBarra"/>
+
+        <EditText
+            android:id="@+id/txtCdBarra"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:layout_weight="0.28" />
+
+
+        <Button
+            style="@style/Base.Widget.AppCompat.ImageButton"
+
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:text=""
+            android:id="@+id/btnCodeBar"
+            android:background="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="              Quantidade"
+            android:id="@+id/lblQtde"/>
+
+        <EditText
+            android:id="@+id/txtQtde"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="              Localização"
+            android:id="@+id/lblQtde"/>
+
+        <EditText
+            android:id="@+id/txtLocalizacao"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="0.41" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:text="Salvar"
+            android:id="@+id/btnSalvar"
+            android:layout_marginLeft="100dp" />
+        <Button
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:text="Cancelar"
+            android:id="@+id/btnCancelar"
+            android:layout_marginLeft="0dp" />
+    </LinearLayout>
+
+</LinearLayout>
